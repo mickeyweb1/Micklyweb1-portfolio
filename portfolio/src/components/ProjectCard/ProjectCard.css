@@ -1,0 +1,159 @@
+.project-card{
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transition: .35s;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.project-card:hover{
+
+    transform: translateY(-8px);
+
+    border-color: var(--accent);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.project-card__image{
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.project-card__image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.project-card__status{
+
+    position:absolute;
+
+    top:15px;
+
+    left:15px;
+
+    background:rgba(0,0,0,.65);
+
+    padding:.45rem .8rem;
+
+    border-radius:50px;
+
+    font-size:.75rem;
+
+    backdrop-filter:blur(10px);
+
+}
+
+.project-card__content{
+
+    padding:1.5rem;
+
+}
+
+.project-card__year{
+
+    color:var(--accent);
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+}
+
+.project-card h3{
+
+    margin:.8rem 0;
+
+    font-size:1.5rem;
+
+}
+
+.project-card p{
+
+    color:var(--muted);
+
+    line-height:1.7;
+
+}
+
+.project-card__tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:.7rem;
+
+    margin:1.5rem 0;
+
+}
+
+.project-card__tech span{
+
+    padding:.35rem .8rem;
+
+    border:1px solid var(--border);
+
+    border-radius:999px;
+
+    font-size:.8rem;
+
+}
+
+.project-card__buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:1.5rem;
+
+}
+
+.project-card__buttons a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.5rem;
+
+    color:var(--text);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.project-card__buttons a:hover{
+
+    color:var(--accent);
+
+}

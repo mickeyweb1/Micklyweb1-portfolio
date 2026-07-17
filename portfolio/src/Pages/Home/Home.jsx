@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { FiGithub, FiArrowRight } from "react-icons/fi";
 
 import "./Home.css";
-
+import TechMarquee from "../../components/TechMarquee/TechMarquee";
+import FeaturedProjects from "../../components/FeaturedProjects/FeaturedProjects";
 
 export default function Home(){
 
@@ -176,6 +177,8 @@ export default function Home(){
 
       </section>
 
+      <TechMarquee />
+      <FeaturedProjects />
 
 
     </main>

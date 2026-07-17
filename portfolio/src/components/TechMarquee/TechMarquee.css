@@ -1,0 +1,96 @@
+.marquee{
+
+  overflow:hidden;
+
+  width:100%;
+
+  border-top:1px solid var(--border);
+
+  border-bottom:1px solid var(--border);
+
+  padding:1.5rem 0;
+
+  background:var(--surface);
+
+}
+
+
+
+.marquee__track{
+
+  display:flex;
+
+  width:max-content;
+
+  animation:scroll 25s linear infinite;
+
+}
+
+
+
+.marquee__item{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:2rem;
+
+  margin-right:2rem;
+
+  font-family:"Space Grotesk";
+
+  font-size:1.5rem;
+
+  color:var(--muted);
+
+}
+
+
+
+.marquee__dot{
+
+  color:var(--accent);
+
+}
+
+
+
+@keyframes scroll{
+
+
+from{
+
+ transform:translateX(0);
+
+}
+
+
+to{
+
+ transform:translateX(-50%);
+
+}
+
+
+}
+
+
+
+.marquee:hover .marquee__track{
+
+  animation-play-state:paused;
+
+}
+
+
+
+@media(max-width:768px){
+
+  .marquee__item{
+
+    font-size:1.2rem;
+
+  }
+
+}
