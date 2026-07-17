@@ -1,0 +1,39 @@
+:root {
+
+  --bg: #07090d;
+
+  --surface: #0d1117;
+
+  --card: #111827;
+
+  --border: rgba(255,255,255,0.12);
+
+
+  --text: #f8fafc;
+
+  --muted: #94a3b8;
+
+
+  --accent: #38bdf8;
+
+  --accent-hover: #0ea5e9;
+
+
+  --radius: 18px;
+
+}
+
+body {
+
+  background:
+  radial-gradient(
+    circle at top,
+    rgba(56,189,248,0.12),
+    transparent 35%
+  ),
+  var(--bg);
+
+
+  color:var(--text);
+
+}

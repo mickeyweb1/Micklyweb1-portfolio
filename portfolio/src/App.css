@@ -1,0 +1,146 @@
+html {
+  scroll-behavior: smooth;
+}
+/* Core Section Layout blocks */
+.portfolio-section {
+  padding: 8rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section-wrapper {
+  max-width: 1152px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Hero Section Layout */
+.hero-block {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.hero-container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.hero-heading {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-heading { font-size: 4.5rem; }
+}
+
+.hero-subtext {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--muted-foreground);
+  max-width: 620px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-btn-primary {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--foreground);
+  color: var(--background);
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: opacity 0.2s;
+}
+
+.hero-btn-secondary {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: background-color 0.2s;
+}
+
+.hero-btn-primary:hover,
+.hero-btn-secondary:hover {
+  opacity: 0.9;
+  background-color: oklch(0.96 0.005 250 / 5%);
+}
+
+.hero-btn-primary:hover {
+  background-color: var(--foreground);
+  opacity: 0.9;
+}
+
+/* Portfolio Card Grid layout */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* About Paragraph rules */
+.about-content-layout {
+  max-width: 720px;
+}
+
+.about-paragraph {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+}
+
+/* Contact Block styling elements */
+.contact-alt-bg {
+  background-color: oklch(0.20 0.014 250 / 15%);
+  border-top: 1px solid var(--border);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.contact-invite {
+  font-size: 1.125rem;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+}
+
+.contact-action-button {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 1rem 2.5rem;
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: opacity 0.2s;
+}
+
+.contact-action-button:hover {
+  opacity: 0.9;
+}
