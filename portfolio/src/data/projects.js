@@ -1,3 +1,8 @@
+import calculatorImage from "../assets/images/projects/calculator.png";
+import chessImage from "../assets/images/projects/chess-game.png";
+import eliteSchoolImage from "../assets/images/projects/elite-school.png";
+import silverpolyImage from "../assets/images/projects/silverpoly.png";
+
 export const projects = [
 
   {
@@ -8,7 +13,7 @@ export const projects = [
     description:
       "A modern responsive school website built with React and CSS.",
 
-    image: "/images/projects/elite-school.png",
+    image: eliteSchoolImage,
 
     technologies: [
       "React",
@@ -34,7 +39,7 @@ export const projects = [
     description:
       "A browser chess game built with HTML, CSS and JavaScript.",
 
-    image: "/images/projects/chess.png",
+    image: chessImage,
 
     technologies: [
       "HTML",
@@ -61,7 +66,7 @@ export const projects = [
     description:
       "A collaborative calculator project built with HTML, CSS and JavaScript.",
 
-    image: "/images/projects/calculator.png",
+    image: calculatorImage,
 
     technologies: [
       "HTML",
@@ -88,7 +93,7 @@ export const projects = [
     description:
       "Responsive business landing page built using HTML and CSS.",
 
-    image: "/images/projects/silverpoly.png",
+    image: silverpolyImage,
 
     technologies: [
       "HTML",

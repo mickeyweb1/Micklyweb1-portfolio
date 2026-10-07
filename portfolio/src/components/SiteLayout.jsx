@@ -1,5 +1,3 @@
-import React from "react";
-
 export function SiteLayout({ children }) {
   // Hardcoded theme tokens to guarantee colors load perfectly
   const layoutStyles = {

@@ -6,9 +6,8 @@ import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Project from "./Pages/Projects/Project";
-// Fixed the import name here to match your JSX below
 import ProjectDetails from "./Pages/ProjectDetails/ProjectDetails";
-import {Contact} from "./Pages/Contact/Contact";
+import Contact from "./Pages/Contact/Contact";
 import Skills from "./Pages/Skills/Skills";
 import NotFound from "./Pages/NotFound/NotFound";
 
@@ -20,7 +19,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Project />} />
-        {/* Now this matches the import perfectly */}
         <Route path="/projects/:id" element={<ProjectDetails />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />

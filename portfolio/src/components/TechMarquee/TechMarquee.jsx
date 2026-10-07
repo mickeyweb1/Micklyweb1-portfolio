@@ -6,10 +6,11 @@ const technologies = [
   "HTML",
   "CSS",
   "Node.js",
+  "Express",
+  "MongoDB",
   "Git",
   "GitHub",
-  "Python",
-  "AI"
+  "Python"
 ];
 
 

@@ -1,46 +1,124 @@
-/* Foundational Reset */
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource/jetbrains-mono/400.css";
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 :root {
-  --bg: #07090d;
-  --surface: #0d1117;
-  --card: #111827;
-  --border: rgba(255, 255, 255, 0.12);
+  font-family: "Inter", sans-serif;
+  color: #202b26;
+  background: #f3f5f0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-  --text: #f8fafc;
-  --muted: #94a3b8;
+  --bg: #f3f5f0;
+  --surface: #fbfcf9;
+  --card: #ffffff;
+  --border: #dce2da;
+  --text: #202b26;
+  --muted: #65716a;
+  --accent: #e75f43;
+  --accent-hover: #c84931;
+  --accent-soft: #f9e4dc;
+  --green: #b9d873;
+  --deep-green: #233b32;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --radius: 8px;
+}
 
-  --accent: #38bdf8;
-  --accent-hover: #0ea5e9;
-
-  --radius: 18px;
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
 }
 
 body {
-  background: 
-    radial-gradient(
-      circle at top,
-      rgba(56, 189, 248, 0.12),
-      transparent 35%
-    ),
-    var(--bg);
-  color: var(--text);
-  font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
-  line-height: 1.5;
+  min-width: 320px;
   min-height: 100vh;
+  color: var(--text);
+  background-color: var(--bg);
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(35, 59, 50, 0.018) 0,
+    rgba(35, 59, 50, 0.018) 1px,
+    transparent 1px,
+    transparent 5px
+  );
+  font-family: var(--font-body);
+  line-height: 1.6;
 }
 
-/* Optional: Ensure links don't have default ugly outlines unless focused via keyboard */
-a:focus-visible {
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 4px;
-  border-radius: 4px;
+}
+
+::selection {
+  color: var(--text);
+  background: var(--green);
+}
+
+.content-page__eyebrow {
+  margin: 0 0 0.9rem;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.content-page__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 2rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--text);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.content-page__link:hover {
+  border-color: var(--text);
+  background: var(--text);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

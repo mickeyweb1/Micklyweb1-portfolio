@@ -20,15 +20,12 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: Connect to your Node.js/Express backend here
-    console.log("Form submitted:", formData);
+    const subject = encodeURIComponent(formData.subject);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
+    );
+    window.location.href = `mailto:anuoluwajanet90@gmail.com?subject=${subject}&body=${body}`;
     setIsSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 3000);
   };
 
   return (
@@ -38,8 +35,7 @@ export default function Contact() {
           <p className="contact__small">Get In Touch</p>
           <h1 className="contact__title">Let's Work Together</h1>
           <p className="contact__description">
-            Have a project in mind or want to discuss AI and software engineering? 
-            Fill out the form below or reach out directly. I will get back to you as soon as possible.
+            Have a project in mind or want to talk about software? Send a note and I will get back to you.
           </p>
         </div>
 
@@ -50,7 +46,7 @@ export default function Contact() {
               <FiMail className="contact__icon" />
               <div>
                 <h3>Email</h3>
-                <a href="mailto:your.email@example.com">your.email@example.com</a>
+                <a href="mailto:anuoluwajanet90@gmail.com">anuoluwajanet90@gmail.com</a>
               </div>
             </div>
 
@@ -70,8 +66,8 @@ export default function Contact() {
             {isSubmitted ? (
               <div className="contact__success">
                 <FiCheckCircle className="success__icon" />
-                <h3>Message Sent Successfully!</h3>
-                <p>Thank you for reaching out. I will get back to you shortly.</p>
+                <h3>Your message is ready</h3>
+                <p>Your email app should open with the message ready to send. If it did not, email me directly.</p>
               </div>
             ) : (
               <>

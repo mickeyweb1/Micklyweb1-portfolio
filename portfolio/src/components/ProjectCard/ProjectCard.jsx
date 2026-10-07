@@ -1,4 +1,5 @@
 import { FiArrowUpRight, FiGithub } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import "./ProjectCard.css";
 
 export default function ProjectCard({ project }) {
@@ -19,7 +20,7 @@ export default function ProjectCard({ project }) {
       <div className="project-card__content">
 
         <h3>
-          {project.title}
+          <Link to={`/projects/${project.slug}`}>{project.title}</Link>
         </h3>
 
         <p>

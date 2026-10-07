@@ -20,8 +20,8 @@ export default function About() {
           <h2>My direction</h2>
           <p>
             My goal is to become a software engineer. I am growing from frontend
-            development into full-stack applications, while also exploring
-            Artificial Intelligence.
+            development into full-stack applications and building my skills
+            through consistent practice.
           </p>
         </div>
         <div>

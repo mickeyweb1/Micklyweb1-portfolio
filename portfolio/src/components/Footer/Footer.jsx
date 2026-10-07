@@ -10,8 +10,8 @@ export default function Footer() {
           <h3>MicklyWeb</h3>
 
           <p>
-            Building modern web applications with React and exploring AI
-            Engineering.
+            Building modern web applications with React and growing my full-stack
+            development skills.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export default function Footer() {
       <div className="footer__bottom">
         <p>© 2026 Kayode Ogunleye · MicklyWeb</p>
 
-        <span>🟢 Available for new projects</span>
+        <span><i className="footer__status-dot" />Available for new projects</span>
       </div>
     </footer>
   );

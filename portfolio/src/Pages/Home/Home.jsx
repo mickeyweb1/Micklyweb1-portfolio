@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FiGithub, FiArrowRight, FiCode } from "react-icons/fi";
+import { FiGithub, FiArrowRight } from "react-icons/fi";
 
 import "./Home.css";
 import TechMarquee from "../../components/TechMarquee/TechMarquee";
@@ -17,14 +17,11 @@ export default function Home() {
 
           <p className="hero__tagline">Turning curiosity into code.</p>
 
-          <h2 className="hero__role">
-            Software Engineer <span>&</span> AI Engineer
-          </h2>
+          <h2 className="hero__role">Aspiring Software Engineer</h2>
 
           <p className="hero__description">
-            I build responsive, high-performance web applications using modern
-            frontend and backend technologies. Currently expanding my expertise
-            in full-stack architecture and Artificial Intelligence.
+            I am becoming a software engineer by building responsive web
+            applications and growing my full-stack development skills.
           </p>
 
           <div className="hero__buttons">
@@ -51,7 +48,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Developer Code Card */}
         <div className="hero__card">
           <div className="hero__card-header">
             <div className="hero__card-dots">
@@ -60,7 +56,7 @@ export default function Home() {
               <span className="dot green"></span>
             </div>
             <span className="hero__card-title">developer.config.js</span>
-            <span className="online-status">● Available</span>
+            <span className="online-status">Available</span>
           </div>
 
           <div className="hero__code">
@@ -72,7 +68,7 @@ export default function Home() {
               name: <span className="code-string">"Kayode Ogunleye"</span>,
             </p>
             <p className="code-indent">
-              role: <span className="code-string">"Full-Stack Developer"</span>,
+              role: <span className="code-string">"Software Developer"</span>,
             </p>
             <p className="code-indent">stack: [</p>
             <p className="code-indent-double">
@@ -84,13 +80,11 @@ export default function Home() {
               <span className="code-string">"MongoDB"</span>,
             </p>
             <p className="code-indent-double">
-              <span className="code-string">"Tailwind CSS"</span>
+              <span className="code-string">"CSS"</span>
             </p>
             <p className="code-indent">],</p>
             <p className="code-indent">
-              motto:{" "}
-              <span className="code-string">"Turning curiosity into code"</span>
-              ,
+              motto: <span className="code-string">"Turning curiosity into code"</span>,
             </p>
             <p className="code-indent">
               available: <span className="code-boolean">true</span>

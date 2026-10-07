@@ -1,5 +1,3 @@
-import React from "react";
-
 const stats = [
   { value: "16", label: "Years young" },
   { value: "2+", label: "Years coding" },
