@@ -88,7 +88,7 @@ export default function About() {
           </article>
 
           <article className="about-small">
-            <h3>Worwave</h3>
+            <h3>WorkWave</h3>
             <p>
               Run every branch from one place: sales, expenses, stock, goods in
               and out, and products. Made for business owners.
@@ -96,7 +96,7 @@ export default function About() {
           </article>
 
           <article className="about-small">
-            <h3>Novra</h3>
+            <h3>Nuvora</h3>
             <p>
               School fees, staff, money and expenses in one website. Built with
               a team of three, and I handled the frontend.
