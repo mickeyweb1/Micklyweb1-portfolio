@@ -28,31 +28,35 @@ export const projects = [
       "AI APIs",
     ],
     featured: true,
+    live: "https://noted-lemon.vercel.app/",
+    github: "https://github.com/mickeyweb1/Noted",
     // image: notedImage,
-    // live: "https://...",
-    // github: "https://...",
   },
   {
-    slug: "worwave",
+    slug: "workwave",
     type: "product",
-    title: "Worwave",
+    title: "WorkWave",
     description:
       "A SaaS app for business owners to run every branch from one place: sales, expenses, stock, goods in and out, and products.",
     role: "Full stack developer",
-    technologies: [], // add what you used, e.g. "React", "Node.js"
+    technologies: ["React", "CSS", "MongoDB", "Node.js", "Express"],
+    live: "https://work-wave-zeta.vercel.app/",
+    github: "https://github.com/mickeyweb1/WorkWave",
     featured: true,
-    // image: worwaveImage,
+    // image: workwaveImage,
   },
   {
-    slug: "novra",
+    slug: "nuvora",
     type: "product",
-    title: "Novra",
+    title: "Nuvora",
     description:
       "A school management website for student fees, staff, money and expenses, so schools spend less time on paperwork.",
     role: "Frontend developer, team of three",
-    technologies: [], // add what you used on the frontend
+    technologies: ["React", "CSS", "Node.js", "Express", "SQL"],
+    live: "https://petra-school-project.vercel.app/",
+    github: "https://github.com/Michael-aal/petra-school-project",
     featured: true,
-    // image: novraImage,
+    // image: nuvoraImage,
   },
 
   {
