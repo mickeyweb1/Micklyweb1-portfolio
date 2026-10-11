@@ -25,7 +25,7 @@ export default function Navbar() {
         {/* Logo */}
         <NavLink to="/" className="navbar__logo" onClick={closeMenu}>
           <span className="navbar__logo-mark">MW</span>
-          <span className="navbar__logo-name">MicklyWeb</span>
+          <span className="navbar__logo-name">MickeyWeb</span>
         </NavLink>
 
         {/* Desktop Navigation */}
