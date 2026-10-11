@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__brand">
-          <h3>MicklyWeb</h3>
+          <h3>MickeyWeb</h3>
 
           <p>
             Building modern web applications with React and growing my full-stack
@@ -49,7 +49,7 @@ export default function Footer() {
       </div>
 
       <div className="footer__bottom">
-        <p>© 2026 Kayode Ogunleye · MicklyWeb</p>
+        <p>© 2026 Kayode Ogunleye · MickeyWeb</p>
 
         <span><i className="footer__status-dot" />Available for new projects</span>
       </div>
